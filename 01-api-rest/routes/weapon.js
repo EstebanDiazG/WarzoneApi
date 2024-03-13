@@ -4,9 +4,9 @@ const {getAllWeapons, createWeapon, deleteWeapon,getWeaponById,updateWeaponById,
 
 
 const weaponRoutes = Router();
+weaponRoutes.get('/count', countWeapon);
 weaponRoutes.get('/', getAllWeapons);
 weaponRoutes.get('/:id', getWeaponById);
-weaponRoutes.get('/count', countWeapon);
 weaponRoutes.get('/url/:id', getImageUrl);
 weaponRoutes.post('/', createWeapon);
 weaponRoutes.put('/:id',updateWeaponById);

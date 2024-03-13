@@ -3,9 +3,9 @@ const {getAllCategory, createCategory, deleteCategory,updateCategoryById,countCa
 
 
 const categoryRoutes = Router();
+categoryRoutes.get('/count', countCategory);
 categoryRoutes.get('/', getAllCategory);
 categoryRoutes.get('/:id', getCategoryById);
-categoryRoutes.get('/count', countCategory);
 categoryRoutes.post('/', createCategory);
 categoryRoutes.delete('/:id', deleteCategory);
 categoryRoutes.put('/:id', updateCategoryById);

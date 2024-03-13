@@ -3,9 +3,9 @@ const {getAllImages, createImage, deleteImage,updateImageById,getImageById,count
 
 
 const imageRoutes = Router();
+imageRoutes.get('/count', countImage);
 imageRoutes.get('/', getAllImages);
 imageRoutes.get('/:id', getImageById);
-imageRoutes.get('/count', countImage);
 imageRoutes.post('/', createImage);
 imageRoutes.delete('/:id', deleteImage);
 imageRoutes.put('/:id', updateImageById);
